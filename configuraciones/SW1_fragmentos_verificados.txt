@@ -1,0 +1,26 @@
+! SW1 — FRAGMENTOS VERIFICADOS. NO es running-config completo.
+! Equipo c2691 con EtherSwitch. Se excluyen secretos y hashes.
+hostname SW1
+service timestamps log datetime msec
+logging buffered 16384 informational
+aaa new-model
+aaa authentication login CONSOLE-RADIUS group radius local
+aaa authentication login SSH-LOCAL local
+aaa authorization console
+aaa authorization exec CONSOLE-EXEC group radius local
+aaa authorization exec SSH-EXEC local
+aaa accounting exec CONSOLE-ACCT start-stop group radius
+ip domain-name lab.local
+login on-failure log
+login on-success log
+! Vlan1 = 10.7.63.2/24 (verificar en running-config íntegro)
+ip radius source-interface Vlan1
+radius-server host 10.7.63.10 auth-port 1812 acct-port 1813
+! radius-server key OMITIDA
+radius-server vsa send authentication
+radius-server vsa send accounting
+line con 0
+ login authentication CONSOLE-RADIUS
+ authorization exec CONSOLE-EXEC
+ accounting exec CONSOLE-ACCT
+! Confirmar sección AUX y VTY completa antes de entregar.

@@ -1,0 +1,5 @@
+flowchart TD
+ R1["R1 - 10.7.63.1"] --> SW1["SW1 - 10.7.63.2"]
+ SW1 --> Cloud1["VMware VMnet3"]
+ Cloud1 --> WindowsServer["Windows Server AD DS + NPS - 10.7.63.10"]
+ SW1 --> PC1["VPCS"]

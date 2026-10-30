@@ -1,0 +1,7 @@
+*.secret
+*.env
+*.key
+*.pem
+*.p12
+*_con_claves.txt
+credenciales.*

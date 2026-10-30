@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="590" viewBox="0 0 860 590">
+<rect width="860" height="590" fill="#f8fafc"/><style>text{font-family:Arial,sans-serif;fill:#102c46}.heading{font-size:25px;font-weight:bold}.sub{font-size:16px}.main{font-size:20px;font-weight:bold}.line{stroke:#40719a;stroke-width:3}</style>
+<text x="430" y="37" class="heading" text-anchor="middle">Laboratorio AAA · Active Directory · NPS</text>
+<rect x="282" y="70" width="296" height="84" fill="#e8f3fc" stroke="#35729e" rx="12"/><text x="430" y="105" class="main" text-anchor="middle">Router R1 · c2691</text><text x="430" y="132" class="sub" text-anchor="middle">Fa0/0 · 10.7.63.1/24</text>
+<line class="line" x1="430" y1="154" x2="430" y2="220"/><text x="442" y="189" class="sub">Fa0/0 — Fa1/0</text>
+<rect x="282" y="220" width="296" height="84" fill="#e8f3fc" stroke="#35729e" rx="12"/><text x="430" y="255" class="main" text-anchor="middle">SW1 · c2691 EtherSwitch</text><text x="430" y="282" class="sub" text-anchor="middle">VLAN1 · 10.7.63.2/24</text>
+<path class="line" fill="none" d="M330 304 V365 H180 V399"/><path class="line" fill="none" d="M530 304 V365 H710 V399"/>
+<rect x="50" y="400" width="270" height="67" fill="#f0edf9" stroke="#8b73b9" rx="12"/><text x="185" y="428" class="main" text-anchor="middle">Cloud1 · VMware</text><text x="185" y="454" class="sub" text-anchor="middle">VMnet3 · Fa1/1</text>
+<rect x="600" y="400" width="220" height="67" fill="#f6efe2" stroke="#b18749" rx="12"/><text x="710" y="428" class="main" text-anchor="middle">PC1 · VPCS</text><text x="710" y="454" class="sub" text-anchor="middle">Fa1/2</text>
+<line class="line" x1="185" y1="467" x2="185" y2="508"/>
+<rect x="49" y="508" width="272" height="70" fill="#eaf5e8" stroke="#6f9f6b" rx="12"/><text x="185" y="534" class="main" text-anchor="middle">Windows Server</text><text x="185" y="558" class="sub" text-anchor="middle">AD DS + NPS · 10.7.63.10</text>
+</svg>

@@ -1,0 +1,37 @@
+! R1 — FRAGMENTOS VERIFICADOS. NO es running-config completo.
+! Se excluyen TODAS las claves y hashes por seguridad.
+hostname R1
+service timestamps log datetime msec
+logging buffered 16384 informational
+aaa new-model
+aaa authentication login CONSOLE-RADIUS group radius local
+aaa authentication login SSH-LOCAL local
+aaa authorization console
+aaa authorization exec CONSOLE-EXEC group radius local
+aaa authorization exec SSH-EXEC local
+aaa accounting exec CONSOLE-ACCT start-stop group radius
+ip domain-name lab.local
+login on-failure log
+login on-success log
+ip ssh version 2
+interface FastEthernet0/0
+ description CONEXION-A-SW1
+ ip address 10.7.63.1 255.255.255.0
+ip radius source-interface FastEthernet0/0
+radius-server host 10.7.63.10 auth-port 1812 acct-port 1813
+! radius-server key OMITIDA
+radius-server vsa send authentication
+radius-server vsa send accounting
+line con 0
+ login authentication CONSOLE-RADIUS
+ authorization exec CONSOLE-EXEC
+ accounting exec CONSOLE-ACCT
+line aux 0
+ login authentication CONSOLE-RADIUS
+ authorization exec CONSOLE-EXEC
+ accounting exec CONSOLE-ACCT
+line vty 0 4
+ login authentication SSH-LOCAL
+ authorization exec SSH-EXEC
+ transport input ssh
+! Exportar y sanear la configuración íntegra antes de la entrega.
