@@ -55,3 +55,113 @@ Añadir capturas originales **depuradas** en `evidencias/`, running-config compl
 
 ## 10. Conclusión
 Las pruebas demuestran autenticación centralizada y niveles diferenciados mediante RADIUS en ambos dispositivos, SSH local administrativo y registro de autenticaciones. Los pendientes se mantienen explícitos para que la documentación refleje únicamente resultados realmente observados.
+
+## 11. Anexo fotográfico de validación
+
+### Evidencia 01 — Topología y conectividad
+
+![Topología GNS3: R1, SW1, Cloud1 y equipo de prueba](../evidencias/01_topologia_gns3.png)
+
+*Topología GNS3: R1, SW1, Cloud1 y equipo de prueba.*
+
+### Evidencia 02 — Identidades de dominio
+
+![Usuarios y grupos de Active Directory](../evidencias/02_usuarios_grupos_AD.png)
+
+*Usuarios y grupos de Active Directory.*
+
+### Evidencia 03 — Clientes NPS
+
+![Clientes RADIUS registrados](../evidencias/03_clientes_NPS.png)
+
+*Clientes RADIUS registrados.*
+
+### Evidencia 04 — Servicio RADIUS
+
+![Puertos UDP 1812 y 1813 escuchando en el servidor](../evidencias/04_puertos_NPS.png)
+
+*Puertos UDP 1812 y 1813 escuchando en el servidor.*
+
+### Evidencia 05 — Políticas de autorización
+
+![Políticas de acceso NPS](../evidencias/05_politicas_NPS.png)
+
+*Políticas de acceso NPS.*
+
+### Evidencia 06 — Router R1: nivel 5
+
+![R1, prueba de acceso con usuario de nivel 5](../evidencias/06_R1_privilegio5.png)
+
+*R1, prueba de acceso con usuario de nivel 5.*
+
+### Evidencia 07 — Router R1: nivel 10
+
+![R1, Current privilege level is 10](../evidencias/07_R1_privilegio10.png)
+
+*R1, Current privilege level is 10.*
+
+### Evidencia 08 — Router R1: nivel 0
+
+![R1, Access-Accept y Cisco AVPair nivel 0](../evidencias/08_R1_privilegio0_radius.png)
+
+*R1, Access-Accept y Cisco AVPair nivel 0.*
+
+### Evidencia 09 — Switch SW1: nivel 5
+
+![SW1, Current privilege level is 5](../evidencias/09_SW1_privilegio5.png)
+
+*SW1, Current privilege level is 5.*
+
+### Evidencia 10 — Switch SW1: nivel 0
+
+![SW1, autorización RADIUS de nivel 0](../evidencias/10_SW1_privilegio0_radius.png)
+
+*SW1, autorización RADIUS de nivel 0.*
+
+### Evidencia 11 — SW1: configuración
+
+![SW1, fragmento visible de running-config](../evidencias/11_SW1_running_config_parcial.png)
+
+*SW1, fragmento visible de running-config.*
+
+### Evidencia 12 — SW1: estadísticas
+
+![SW1, estadísticas RADIUS y versión SSH](../evidencias/12_SW1_radius_stats.png)
+
+*SW1, estadísticas RADIUS y versión SSH.*
+
+### Evidencia 13 — SW1: auditoría
+
+![SW1, registro de eventos y autenticaciones](../evidencias/13_SW1_logs.png)
+
+*SW1, registro de eventos y autenticaciones.*
+
+### Evidencia 14 — R1: configuración
+
+![R1, fragmento visible de running-config](../evidencias/14_R1_running_config_parcial.png)
+
+*R1, fragmento visible de running-config.*
+
+### Evidencia 15 — R1: controles de acceso
+
+![R1, configuración de consola AUX y VTY](../evidencias/15_R1_aux_y_vty.png)
+
+*R1, configuración de consola AUX y VTY.*
+
+### Evidencia 16 — R1: auditoría
+
+![R1, registros de accesos fallidos y exitosos](../evidencias/16_R1_logs.png)
+
+*R1, registros de accesos fallidos y exitosos.*
+
+### Evidencia 17 — R1: estadísticas
+
+![R1, estadísticas RADIUS y SSH](../evidencias/17_R1_radius_stats.png)
+
+*R1, estadísticas RADIUS y SSH.*
+
+### Evidencia 18 — R1: interfaces
+
+![R1, interfaz y direccionamiento IP](../evidencias/18_R1_interfaces.png)
+
+*R1, interfaz y direccionamiento IP.*
