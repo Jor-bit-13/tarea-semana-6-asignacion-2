@@ -1,8 +1,0 @@
-Nombre: [NOMBRE COMPLETO]
-Matrícula: [MATRÍCULA]
-Asignación: Semana 6 — Asignación 2
-Repositorio: https://github.com/Jor-bit-13/tarea-semana-6-asignacion-2
-Video YouTube: [AÑADIR ENLACE]
-
-Renombrar este archivo al formato exacto solicitado por el profesor:
-<Nombre>_<Matrícula>_<P#>.txt
