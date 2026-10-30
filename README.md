@@ -63,8 +63,6 @@ En las políticas NPS se utiliza **Cisco-AV-Pair**, no un atributo `Vendor-Speci
 - [configuraciones/](configuraciones/): fragmentos sanitizados **NO equivalentes a running-config completos**.
 - [scripts/verificar-ad-nps.ps1](scripts/verificar-ad-nps.ps1): verificaciones de solo lectura en Windows.
 - [evidencias/INDICE.md](evidencias/INDICE.md): listado de capturas para incorporar.
-- [entrega/guion-video.md](entrega/guion-video.md): demostración de máximo diez minutos.
-- [entrega/Nombre_Matricula_A2.txt](entrega/Nombre_Matricula_A2.txt): plantilla del archivo de entrega.
 
 ## Antes de entregar
 Completar: **video al inicio de este README**, imágenes del paquete local, running-config íntegros depurados, evidencia final de AUX/SW1, fecha y hora de la demostración, relación entre IP y matrícula, y nombre reglamentario del TXT. La tarea es individual.
