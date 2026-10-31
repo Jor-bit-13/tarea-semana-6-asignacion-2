@@ -2,7 +2,7 @@
 
 **Seguridad de Redes · Laboratorio individual: Cisco AAA + Active Directory + NPS / RADIUS**
 
-> 🎥 **VIDEO DEMOSTRATIVO (YouTube, máximo 10 minutos):** pendiente de agregar.
+> [🎥 **VIDEO DEMOSTRATIVO (YouTube, máximo 10 minutos):** pendiente de agregar](https://youtu.be/Tf-vimwzNFs).
 > **Estado:** autenticación/autorización de los niveles 0, 5 y 10 comprobada en R1 y SW1. Las imágenes deben encontrarse en `evidencias/` para verse dentro de esta página. Los running-config completos depurados y el video siguen pendientes.
 
 ## Propósito
